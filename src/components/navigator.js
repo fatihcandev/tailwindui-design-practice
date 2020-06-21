@@ -1,5 +1,5 @@
 import React from 'react'
-import TextBody from './dashboard/text-body'
+import TextBody from './text-body'
 import { Link } from 'gatsby'
 import styles from '../styles/navigator.module.css'
 import ArrowRight from './arrow'
