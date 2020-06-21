@@ -1,11 +1,42 @@
+@import '../variables';
+
 .sidebar {
   padding: 25px 10px;
-  width: 290px;
-  background-color: #43379d;
-  display: grid;
+  background-color: $sidebar-bg;
   grid-template-columns: auto;
   grid-template-rows: repeat(8, 45px);
   grid-row-gap: 5px;
+  display: none;
+
+  @media ($md) {
+    width: 30%;
+    display: grid;
+  }
+
+  @media ($lg) {
+    width: 20%;
+  }
+}
+
+.sidebarAnimated {
+  padding: 25px 10px;
+  background-color: $sidebar-bg;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(9, 45px);
+  grid-row-gap: 5px;
+  min-height: 100vh;
+  position: absolute;
+  z-index: 20;
+  width: 60%;
+  left: -200px;
+  animation: open 0.5s 1 ease forwards;
+
+  @keyframes open {
+    100% {
+      left: 0;
+    }
+  }
 }
 
 .sidebarItem {
@@ -16,20 +47,24 @@
   transition: color 0.4s ease;
   border-radius: 5px;
 
+  &:nth-child(1) {
+    margin-left: auto;
+  }
+
   &:nth-child(2) {
-    background-color: #362f78;
+    background-color: $sidebar-selected-bg;
 
     p {
-      color: #b5c2fc;
+      color: $sidebar-selected-color;
     }
   }
 
   &:hover {
     cursor: pointer;
-    background-color: #362f78;
+    background-color: $sidebar-selected-bg;
 
     p {
-      color: #b5c2fc;
+      color: $sidebar-selected-color;
     }
   }
 
