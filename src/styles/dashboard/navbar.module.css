@@ -1,7 +1,7 @@
+/* media queries */
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 -1px 5px 0px rgba(0, 0, 0, 0.3);
@@ -13,6 +13,18 @@
   height: 25px;
   margin-right: 20px;
   cursor: pointer;
+}
+
+.menu {
+  margin-right: 10px;
+}
+.menu svg {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
 }
 
 .navbarSearch {
@@ -32,6 +44,7 @@
 .right {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .avatar {
@@ -44,8 +57,5 @@
   width: 100%;
   height: auto;
 }
-
-/* margin between bell icon and avatar is 20px */
-/* color: rgb(158, 166, 178) */
 
 /*# sourceMappingURL=navbar.module.css.map */

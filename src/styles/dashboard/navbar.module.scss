@@ -1,18 +1,30 @@
+@import '../variables';
+
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 -1px 5px 0px rgba(0, 0, 0, 0.3);
   z-index: 10;
-  color: rgb(158, 166, 178);
+  color: #9ea6b2;
 
   svg {
     width: 25px;
     height: 25px;
     margin-right: 20px;
     cursor: pointer;
+  }
+}
+
+.menu {
+  margin-right: 10px;
+  svg {
+    margin: 0;
+  }
+
+  @media ($md) {
+    display: none;
   }
 }
 
@@ -35,6 +47,7 @@
 .right {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .avatar {
@@ -48,7 +61,3 @@
     height: auto;
   }
 }
-
-/* margin between bell icon and avatar is 20px */
-
-/* color: rgb(158, 166, 178) */
