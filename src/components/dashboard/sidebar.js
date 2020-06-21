@@ -3,7 +3,7 @@ import styles from '../../styles/dashboard/sidebar.module.css'
 import Logo from './logo'
 import SidebarItem from './sidebar-item'
 import Home from './icons/home'
-import TextBody from './text-body'
+import TextBody from '../text-body'
 import Team from './icons/team'
 import Documents from './icons/documents'
 import Reports from './icons/reports'
@@ -11,6 +11,7 @@ import Calendar from './icons/calendar'
 import Projects from './icons/projects'
 import ArrowRight from '../arrow'
 import Url from '../url'
+import Close from './icons/close'
 
 const MENU = [
   {
@@ -52,8 +53,16 @@ const MENU = [
   }
 ]
 
-const Sidebar = () => (
-  <aside className={styles.sidebar}>
+const Sidebar = ({ onClose, navOpen }) => (
+  <aside
+    className={navOpen ? styles.sidebarAnimated : styles.sidebar}
+    id="sidebar"
+  >
+    {navOpen && (
+      <SidebarItem>
+        <Close onClick={onClose} />
+      </SidebarItem>
+    )}
     <Logo />
     {MENU.map(menu => (
       <SidebarItem key={menu.key}>
