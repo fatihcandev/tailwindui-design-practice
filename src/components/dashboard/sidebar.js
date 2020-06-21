@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/sidebar.module.css'
+import styles from '../../styles/sidebar.module.css'
 import Logo from './logo'
 import SidebarItem from './sidebar-item'
 import Home from './icons/home'
