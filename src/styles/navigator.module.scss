@@ -1,0 +1,16 @@
+.navigator {
+  display: flex;
+  align-items: center;
+  color: #43379d;
+
+  a {
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+}
