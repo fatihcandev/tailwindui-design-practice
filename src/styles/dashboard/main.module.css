@@ -1,6 +1,19 @@
+/* media queries */
 .main {
   display: flex;
   flex-direction: column;
-  width: 1150px;
+  width: 100%;
   min-height: 100vh;
 }
+@media (min-width: 768px) {
+  .main {
+    width: 70%;
+  }
+}
+@media (min-width: 1024px) {
+  .main {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=main.module.css.map */
