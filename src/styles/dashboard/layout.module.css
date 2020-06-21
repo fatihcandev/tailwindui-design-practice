@@ -6,6 +6,15 @@
   border: 0;
 }
 
+button {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+}
+button:focus {
+  outline: none;
+}
+
 html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   line-height: 1.5;
