@@ -1,7 +1,7 @@
 .sidebar {
   padding: 25px 10px;
   width: 290px;
-  background-color: rgb(67, 55, 157);
+  background-color: #43379d;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(7, 45px);
@@ -12,34 +12,34 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  color: rgb(141, 162, 251);
+  color: #8da2fb;
   transition: color 0.4s ease;
   border-radius: 5px;
 
   &:nth-child(2) {
-    background-color: rgb(54, 47, 120);
+    background-color: #362f78;
 
     p {
-      color: rgb(181, 194, 252);
+      color: #b5c2fc;
     }
   }
 
   &:hover {
     cursor: pointer;
-    background-color: rgb(54, 47, 120);
+    background-color: #362f78;
 
     p {
-      color: rgb(181, 194, 252);
+      color: #b5c2fc;
     }
+  }
+
+  p {
+    font-weight: 500;
   }
 
   svg {
     width: 25px;
     height: 25px;
     margin-right: 15px;
-  }
-
-  p {
-    font-weight: 500;
   }
 }
