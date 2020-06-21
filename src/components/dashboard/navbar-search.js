@@ -1,6 +1,6 @@
 import React from 'react'
 import Search from './icons/search'
-import TextBody from './text-body'
+import TextBody from '../text-body'
 import styles from '../../styles/dashboard/navbar.module.css'
 
 const NavbarSearch = () => (
