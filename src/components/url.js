@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../styles/url.module.css'
-import TextBody from './dashboard/text-body'
+import TextBody from './text-body'
 
 const Url = ({ href, title, children }) => (
   <a href={href} title={title} className={styles}>
