@@ -4,7 +4,7 @@
   background-color: #43379d;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: repeat(7, 45px);
+  grid-template-rows: repeat(8, 45px);
   grid-row-gap: 5px;
 }
 

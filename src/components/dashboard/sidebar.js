@@ -9,6 +9,8 @@ import Documents from './icons/documents'
 import Reports from './icons/reports'
 import Calendar from './icons/calendar'
 import Projects from './icons/projects'
+import ArrowRight from '../arrow'
+import Url from '../url'
 
 const MENU = [
   {
@@ -40,6 +42,13 @@ const MENU = [
     key: 'reports',
     title: 'Reports',
     icon: <Reports />
+  },
+  {
+    key: 'original',
+    title: 'See the original',
+    icon: <ArrowRight />,
+    href:
+      'https://tailwindui.com/components/application-ui/application-shells/sidebar#component-17f40014d95a5c5bb5628b9d69558a69'
   }
 ]
 
@@ -49,7 +58,13 @@ const Sidebar = () => (
     {MENU.map(menu => (
       <SidebarItem key={menu.key}>
         {menu.icon}
-        <TextBody>{menu.title}</TextBody>
+        {menu.key === 'original' ? (
+          <Url href={menu.href} title={menu.title}>
+            {menu.title}
+          </Url>
+        ) : (
+          <TextBody>{menu.title}</TextBody>
+        )}
       </SidebarItem>
     ))}
   </aside>
