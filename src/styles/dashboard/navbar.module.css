@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 -1px 5px 0px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  color: #9ea6b2;
+}
+.navbar svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.navbarSearch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.navbarSearch p {
+  font-weight: 500;
+}
+.navbarSearch svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+.avatar img {
+  border-radius: 100%;
+  width: 100%;
+  height: auto;
+}
+
+/* margin between bell icon and avatar is 20px */
+/* color: rgb(158, 166, 178) */
+
+/*# sourceMappingURL=navbar.module.css.map */
