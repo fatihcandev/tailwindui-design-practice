@@ -1,5 +1,5 @@
 import React from 'react'
-import TextBody from '../components/dashboard/text-body'
+import TextBody from '../components/text-body'
 import styles from '../styles/index.module.css'
 import Navigator from '../components/navigator'
 import TailwindUILogo from '../components/tailwind-ui-logo'
