@@ -1,0 +1,13 @@
+/* media queries */
+.menu {
+  width: 30px;
+  height: 30px;
+  justify-self: flex-end;
+}
+@media (min-width: 1024px) {
+  .menu {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=menu.module.css.map */

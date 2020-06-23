@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../../styles/hero-section/call-to-action.module.css'
+import styles from '../../../styles/hero-section/menu.module.css'
 
 const Menu = ({ onClick }) => (
   <button className={styles.menu} onClick={onClick}>

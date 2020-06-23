@@ -1,0 +1,11 @@
+@import '../variables';
+
+.menu {
+  width: 30px;
+  height: 30px;
+  justify-self: flex-end;
+
+  @media ($lg) {
+    display: none;
+  }
+}
