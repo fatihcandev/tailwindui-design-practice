@@ -1,8 +1,13 @@
 import React from 'react'
 import styles from '../../../styles/dashboard/navbar.module.css'
+import Button from '../../button'
 
 const Menu = ({ onClick }) => (
-  <button className={styles.menu} onClick={onClick}>
+  <Button
+    className={styles.menu}
+    onClick={onClick}
+    aria-label="Open the mobile navbar"
+  >
     <svg
       fill="none"
       strokeLinecap="round"
@@ -13,7 +18,7 @@ const Menu = ({ onClick }) => (
     >
       <path d="M4 6h16M4 12h8m-8 6h16"></path>
     </svg>
-  </button>
+  </Button>
 )
 
 export default Menu

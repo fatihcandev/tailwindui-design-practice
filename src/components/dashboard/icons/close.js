@@ -1,7 +1,8 @@
 import React from 'react'
+import Button from '../../button'
 
 const Close = ({ onClick }) => (
-  <button onClick={onClick}>
+  <Button onClick={onClick} aria-label="Close the mobile navbar">
     <svg
       fill="none"
       strokeLinecap="round"
@@ -12,7 +13,7 @@ const Close = ({ onClick }) => (
     >
       <path d="M6 18L18 6M6 6l12 12"></path>
     </svg>
-  </button>
+  </Button>
 )
 
 export default Close
