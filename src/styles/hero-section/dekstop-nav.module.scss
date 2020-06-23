@@ -1,0 +1,21 @@
+@import '../variables';
+
+.desktopNav {
+  display: none;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: auto;
+
+  p {
+    color: #7c7879;
+    font-weight: 500;
+
+    &:hover {
+      cursor: pointer;
+      color: $call-to-action-blue;
+    }
+  }
+
+  @media ($lg) {
+    display: grid;
+  }
+}

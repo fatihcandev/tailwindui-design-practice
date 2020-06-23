@@ -1,0 +1,21 @@
+/* media queries */
+.desktopNav {
+  display: none;
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: auto;
+}
+.desktopNav p {
+  color: #7c7879;
+  font-weight: 500;
+}
+.desktopNav p:hover {
+  cursor: pointer;
+  color: #5663e5;
+}
+@media (min-width: 1024px) {
+  .desktopNav {
+    display: grid;
+  }
+}
+
+/*# sourceMappingURL=dekstop-nav.module.css.map */
