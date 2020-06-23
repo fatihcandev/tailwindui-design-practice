@@ -44,5 +44,12 @@
   width: 25px;
   height: 25px;
 }
+.mobileNavOpen .loginText {
+  border-radius: 5px;
+  color: #5663e5;
+  padding: 10px;
+  background-color: #f9fafc;
+  text-align: center;
+}
 
 /*# sourceMappingURL=mobile-nav.module.css.map */

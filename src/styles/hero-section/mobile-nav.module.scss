@@ -46,4 +46,12 @@
       height: 25px;
     }
   }
+
+  .loginText {
+    border-radius: 5px;
+    color: $dark-blue;
+    padding: 10px;
+    background-color: $very-light-blue;
+    text-align: center;
+  }
 }

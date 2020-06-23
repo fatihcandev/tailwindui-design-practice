@@ -15,7 +15,7 @@ const MobileNav = ({ navOpen, onClick }) => (
       <TextBody>Features</TextBody>
       <TextBody>Marketplace</TextBody>
       <TextBody>Company</TextBody>
-      <TextBody>Login</TextBody>
+      <TextBody className={styles.loginText}>Login</TextBody>
     </div>
   </div>
 )
