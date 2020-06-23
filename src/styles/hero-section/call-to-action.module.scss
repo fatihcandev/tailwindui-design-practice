@@ -17,13 +17,102 @@
 .callToAction {
   z-index: 20;
   padding: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto;
+  align-items: center;
 
   @media ($xl) {
     padding: 20px 40px;
   }
 }
 
-.bigText {
-  font-size: 30px;
-  font-weight: bold;
+.textArea {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+  h1 {
+    font-weight: 800;
+    font-size: 35px;
+
+    &:nth-child(2) {
+      color: $dark-blue;
+    }
+
+    @media ($md) {
+      font-size: 45px;
+      text-align: center;
+    }
+
+    @media ($lg) {
+      font-size: 60px;
+    }
+
+    @media ($xl) {
+      font-size: 55px;
+      text-align: left;
+    }
+  }
+}
+
+.paragraph {
+  color: $gray;
+
+  @media ($md) {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @media ($lg) {
+    width: 55%;
+    margin: auto;
+  }
+
+  @media ($xl) {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  @media ($md) {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media ($xl) {
+    justify-content: start;
+  }
+
+  .dark {
+    background-color: $dark-blue;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #fff;
+
+    &:hover {
+      background-color: lighten($dark-blue, 10%);
+    }
+
+    @media ($md) {
+      margin-bottom: 0;
+      margin-right: 10px;
+    }
+  }
+
+  .light {
+    background-color: $light-blue;
+    color: $dark-blue;
+
+    &:hover {
+      background-color: lighten($light-blue, 2%);
+    }
+  }
 }

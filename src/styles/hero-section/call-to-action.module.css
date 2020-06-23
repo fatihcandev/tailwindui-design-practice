@@ -17,6 +17,10 @@
 .callToAction {
   z-index: 20;
   padding: 20px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto;
+  align-items: center;
 }
 @media (min-width: 1280px) {
   .callToAction {
@@ -24,9 +28,97 @@
   }
 }
 
-.bigText {
-  font-size: 30px;
-  font-weight: bold;
+.textArea {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.textArea h1 {
+  font-weight: 800;
+  font-size: 35px;
+}
+.textArea h1:nth-child(2) {
+  color: #5663e5;
+}
+@media (min-width: 768px) {
+  .textArea h1 {
+    font-size: 45px;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .textArea h1 {
+    font-size: 60px;
+  }
+}
+@media (min-width: 1280px) {
+  .textArea h1 {
+    font-size: 55px;
+    text-align: left;
+  }
+}
+
+.paragraph {
+  color: #7c7879;
+}
+@media (min-width: 768px) {
+  .paragraph {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .paragraph {
+    width: 55%;
+    margin: auto;
+  }
+}
+@media (min-width: 1280px) {
+  .paragraph {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (min-width: 1280px) {
+  .buttons {
+    justify-content: start;
+  }
+}
+.buttons .dark {
+  background-color: #5663e5;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #fff;
+}
+.buttons .dark:hover {
+  background-color: #828cec;
+}
+@media (min-width: 768px) {
+  .buttons .dark {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
+.buttons .light {
+  background-color: #e7edfd;
+  color: #5663e5;
+}
+.buttons .light:hover {
+  background-color: #f0f4fe;
 }
 
 /*# sourceMappingURL=call-to-action.module.css.map */
