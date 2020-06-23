@@ -1,0 +1,13 @@
+@import '../variables';
+
+.layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 60% 40%;
+  grid-template-columns: 1fr;
+
+  @media ($xl) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}

@@ -1,0 +1,15 @@
+/* media queries */
+.layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 60% 40%;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 1280px) {
+  .layout {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+/*# sourceMappingURL=layout.module.css.map */
