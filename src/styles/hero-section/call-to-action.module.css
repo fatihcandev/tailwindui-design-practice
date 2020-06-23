@@ -1,0 +1,32 @@
+/* media queries */
+.callToAction {
+  padding: 20px;
+}
+
+.navbar {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+.navbar .menu {
+  width: 30px;
+  height: 30px;
+  justify-self: flex-end;
+}
+@media (min-width: 1024px) {
+  .navbar .menu {
+    display: none;
+  }
+}
+.navbar .logo {
+  width: 40px;
+  height: 40px;
+}
+
+.bigText {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=call-to-action.module.css.map */

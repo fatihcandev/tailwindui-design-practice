@@ -1,0 +1,32 @@
+@import '../variables';
+
+.callToAction {
+  padding: 20px;
+}
+
+.navbar {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+
+  .menu {
+    width: 30px;
+    height: 30px;
+    justify-self: flex-end;
+
+    @media ($lg) {
+      display: none;
+    }
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.bigText {
+  font-size: 30px;
+  font-weight: bold;
+}
