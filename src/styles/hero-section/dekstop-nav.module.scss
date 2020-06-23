@@ -6,16 +6,24 @@
   grid-template-rows: auto;
 
   p {
-    color: #7c7879;
+    color: $gray;
     font-weight: 500;
 
     &:hover {
       cursor: pointer;
-      color: $call-to-action-blue;
+      color: $dark-blue;
     }
   }
 
   @media ($lg) {
+    font-size: 17px;
     display: grid;
+    justify-content: end;
+    grid-column-gap: 30px;
+  }
+
+  @media ($xl) {
+    justify-content: stretch;
+    grid-column-gap: 0;
   }
 }

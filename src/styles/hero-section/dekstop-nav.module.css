@@ -14,7 +14,16 @@
 }
 @media (min-width: 1024px) {
   .desktopNav {
+    font-size: 17px;
     display: grid;
+    justify-content: end;
+    grid-column-gap: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .desktopNav {
+    justify-content: stretch;
+    grid-column-gap: 0;
   }
 }
 
