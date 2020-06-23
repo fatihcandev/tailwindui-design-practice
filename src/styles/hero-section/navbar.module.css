@@ -1,0 +1,15 @@
+/* media queries */
+.navbar {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .navbar {
+    grid-template-columns: auto 1fr;
+    grid-column-gap: 50px;
+  }
+}
+
+/*# sourceMappingURL=navbar.module.css.map */
