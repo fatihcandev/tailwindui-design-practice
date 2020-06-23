@@ -11,12 +11,14 @@ import TextBody from '../components/text-body'
 import styles from '../styles/hero-section/call-to-action.module.css'
 import TextTitle from '../components/text-title'
 import ThemeButton from '../components/theme-button'
+import SEO from '../components/seo'
 
 const HeroSection = ({ data }) => {
   const [navOpen, setNavOpen] = useState(false)
 
   return (
     <Layout>
+      <SEO title="Hero section with angled image on right" />
       <SkewedShape />
       <CallToAction>
         <Navbar onClick={() => setNavOpen(true)} />
@@ -32,8 +34,12 @@ const HeroSection = ({ data }) => {
             maximus auctor.
           </TextBody>
           <div className={styles.buttons}>
-            <ThemeButton className={styles.dark}>Get Started</ThemeButton>
-            <ThemeButton className={styles.light}>Live Demo</ThemeButton>
+            <ThemeButton className={styles.dark} aria-label="Get Started">
+              Get Started
+            </ThemeButton>
+            <ThemeButton className={styles.light} aria-label="Live Demo">
+              Live Demo
+            </ThemeButton>
           </div>
         </div>
       </CallToAction>
