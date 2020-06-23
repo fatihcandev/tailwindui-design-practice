@@ -1,16 +1,28 @@
+/* media queries */
 .index {
   min-height: 100vh;
-  padding: 16px;
   background-color: #f4f5f7;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
-.index p {
+
+.container {
+  height: 200px;
+  margin: 0 auto;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+.container p {
   font-size: 20px;
 }
-.index:nth-child(2) {
-  margin: 15px 0;
+
+.links {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-row-gap: 20px;
 }
 
 /*# sourceMappingURL=index.module.css.map */
