@@ -10,7 +10,7 @@ import MobileNav from '../components/hero-section/mobile-navbar'
 import TextBody from '../components/text-body'
 import styles from '../styles/hero-section/call-to-action.module.css'
 import TextTitle from '../components/text-title'
-import ThemeButton from '../components/theme-button'
+import ThemeButton from '../components/hero-section/theme-button'
 import SEO from '../components/seo'
 
 const HeroSection = ({ data }) => {
