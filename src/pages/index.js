@@ -10,7 +10,11 @@ export default function Index() {
     <div className={styles.index}>
       <SEO />
       <div className={styles.container}>
-        <a href="https://tailwindui.com" title="Go to Tailwind UI">
+        <a
+          href="https://tailwindui.com"
+          title="Go to Tailwind UI
+        "
+        >
           <TailwindUILogo />
         </a>
         <TextBody>
@@ -26,6 +30,12 @@ export default function Index() {
             title="Hero section with angled image on right"
           >
             Hero section with angled image on right
+          </Navigator>
+          <Navigator
+            to="/sign-in-split-screen"
+            title="Split screen sign in page"
+          >
+            Split screen sign in page
           </Navigator>
         </div>
       </div>
