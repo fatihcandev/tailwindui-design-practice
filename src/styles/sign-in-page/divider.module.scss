@@ -1,0 +1,19 @@
+@import '../variables';
+
+.divider {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  grid-column-gap: 7px;
+  margin-top: 20px;
+
+  p {
+    color: $gray;
+  }
+
+  span {
+    background-color: rgb(232, 234, 236);
+    height: 2px;
+  }
+}
