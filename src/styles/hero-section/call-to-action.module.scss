@@ -39,7 +39,7 @@
     font-size: 35px;
 
     &:nth-child(2) {
-      color: $dark-blue;
+      color: $blue;
     }
 
     @media ($md) {
@@ -92,13 +92,13 @@
   }
 
   .dark {
-    background-color: $dark-blue;
+    background-color: $blue;
     margin-bottom: 10px;
     font-weight: 500;
     color: #fff;
 
     &:hover {
-      background-color: lighten($dark-blue, 10%);
+      background-color: lighten($blue, 10%);
     }
 
     @media ($md) {
@@ -109,7 +109,7 @@
 
   .light {
     background-color: $light-blue;
-    color: $dark-blue;
+    color: $blue;
 
     &:hover {
       background-color: lighten($light-blue, 2%);
