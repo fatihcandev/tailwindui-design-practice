@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../variables.scss","dekstop-nav.module.scss"],"names":[],"mappings":"AAQA;ACNA;EACE;EACA;EACA;;AAEA;EACE,ODHG;ECIH;;AAEA;EACE;EACA,ODVM;;ACcV;EAfF;IAgBI;IACA;IACA;IACA;;;AAGF;EAtBF;IAuBI;IACA","file":"dekstop-nav.module.css"}
+{"version":3,"sourceRoot":"","sources":["../variables.scss","dekstop-nav.module.scss"],"names":[],"mappings":"AAUA;ACRA;EACE;EACA;EACA;;AAEA;EACE,ODFG;ECGH;;AAEA;EACE;EACA,ODTC;;ACaL;EAfF;IAgBI;IACA;IACA;IACA;;;AAGF;EAtBF;IAuBI;IACA","file":"dekstop-nav.module.css"}
