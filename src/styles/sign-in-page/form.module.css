@@ -1,0 +1,51 @@
+/* media queries */
+.form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .form {
+    padding: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .form {
+    padding: 75px;
+  }
+}
+@media (min-width: 1280px) {
+  .form {
+    padding: 105px;
+  }
+}
+.form .title {
+  color: #16142e;
+  font-weight: 800;
+  font-size: 25px;
+  margin-top: 15px;
+}
+.form .trial {
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+.form .trial .blue {
+  color: #5663e5;
+  margin-left: 5px;
+  font-weight: 500;
+}
+.form .grayText {
+  color: #47505d;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.form .socialButtonSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 15px;
+}
+
+/*# sourceMappingURL=form.module.css.map */

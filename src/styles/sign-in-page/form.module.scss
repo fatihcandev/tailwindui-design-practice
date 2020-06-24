@@ -1,0 +1,52 @@
+@import '../variables';
+
+.form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  @media ($md) {
+    padding: 50px;
+  }
+
+  @media ($lg) {
+    padding: 75px;
+  }
+
+  @media ($xl) {
+    padding: 105px;
+  }
+
+  .title {
+    color: $very-dark-blue;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 15px;
+  }
+
+  .trial {
+    display: flex;
+    align-items: center;
+    color: gray;
+
+    .blue {
+      color: $blue;
+      margin-left: 5px;
+      font-weight: 500;
+    }
+  }
+
+  .grayText {
+    color: $dark-gray;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+
+  .socialButtonSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+  }
+}
