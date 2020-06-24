@@ -1,0 +1,13 @@
+@import '../variables';
+
+.imageSection {
+  display: none;
+
+  @media ($md) {
+    display: block;
+  }
+
+  * {
+    height: 100%;
+  }
+}
