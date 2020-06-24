@@ -13,6 +13,7 @@ import Twitter from '../components/sign-in-page/icons/twitter'
 import GitHub from '../components/sign-in-page/icons/github'
 import Divider from '../components/sign-in-page/divider'
 import Input from '../components/sign-in-page/input'
+import ImageSection from '../components/sign-in-page/image-section'
 
 const SignIn = ({ data }) => (
   <Layout>
@@ -39,11 +40,13 @@ const SignIn = ({ data }) => (
       </div>
       <Divider />
       <TextBody className={styles.grayText}>Email Address</TextBody>
-      <Input />
+      <Input type="email" />
       <TextBody className={styles.grayText}>Password</TextBody>
-      <Input pass />
+      <Input type="password" />
     </Form>
-    <Image img={data.file.childImageSharp.fluid} alt="an architecture" />
+    <ImageSection>
+      <Image img={data.file.childImageSharp.fluid} alt="an architecture" />
+    </ImageSection>
   </Layout>
 )
 
