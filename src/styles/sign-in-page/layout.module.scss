@@ -1,0 +1,40 @@
+@import '../variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  border: 0;
+}
+
+button {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+body {
+  font-size: 1em;
+}
+
+.layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+
+  @media ($md) {
+    grid-template-columns: 40% 60%;
+  }
+}
