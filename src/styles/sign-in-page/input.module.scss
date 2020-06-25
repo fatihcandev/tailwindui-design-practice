@@ -20,6 +20,7 @@
     height: 17px;
     border-radius: 3px;
     margin-right: 5px;
+    cursor: pointer;
 
     svg {
       display: none;
@@ -35,6 +36,7 @@
     justify-content: center;
     transition: background-color 0.3s ease;
     background-color: $blue;
+    cursor: pointer;
 
     svg {
       display: block;
