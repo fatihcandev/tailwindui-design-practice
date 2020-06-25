@@ -49,4 +49,16 @@
     grid-template-rows: auto;
     grid-column-gap: 15px;
   }
+
+  .rememberForgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    .forgot {
+      color: $blue;
+      font-weight: 500;
+    }
+  }
 }

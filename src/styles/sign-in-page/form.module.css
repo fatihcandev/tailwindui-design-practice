@@ -47,5 +47,15 @@
   grid-template-rows: auto;
   grid-column-gap: 15px;
 }
+.form .rememberForgot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.form .rememberForgot .forgot {
+  color: #5663e5;
+  font-weight: 500;
+}
 
 /*# sourceMappingURL=form.module.css.map */
