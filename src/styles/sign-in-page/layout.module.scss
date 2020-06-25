@@ -35,6 +35,18 @@ body {
   grid-template-rows: 1fr;
 
   @media ($md) {
+    grid-template-columns: 70% 30%;
+  }
+
+  @media ($lg) {
+    grid-template-columns: 60% 40%;
+  }
+
+  @media ($xl) {
+    grid-template-columns: 50% 50%;
+  }
+
+  @media ($xl) {
     grid-template-columns: 40% 60%;
   }
 }

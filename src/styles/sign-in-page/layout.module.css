@@ -34,6 +34,21 @@ body {
 }
 @media (min-width: 768px) {
   .layout {
+    grid-template-columns: 70% 30%;
+  }
+}
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: 60% 40%;
+  }
+}
+@media (min-width: 1280px) {
+  .layout {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (min-width: 1280px) {
+  .layout {
     grid-template-columns: 40% 60%;
   }
 }
