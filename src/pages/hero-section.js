@@ -59,7 +59,7 @@ export const pageQuery = graphql`
   query {
     file(relativePath: { eq: "hero-section-image.jpg" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
