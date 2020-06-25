@@ -1,6 +1,6 @@
 # Tailwind UI Design Practice
 
-This repository contains re-designed components from [Tailwind UI](https://tailwindui.com)
+Designing [Tailwind UI](https://tailwindui.com) components from scratch to practice and improve my front-end skills.
 
 [Go to website](https://tailwindui-design-practice.vercel.app/)
 
