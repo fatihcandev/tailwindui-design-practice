@@ -1,12 +1,11 @@
 import React from 'react'
-import styles from '../../../styles/hero-section/logo.module.css'
 
-const Logo = () => (
+const Logo = ({ ...props }) => (
   <svg
-    className={styles.logo}
     fill="none"
     viewBox="0 0 35 32"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path
       fill="#5850EC"
