@@ -56,6 +56,10 @@
 .form .rememberForgot .forgot {
   color: #5663e5;
   font-weight: 500;
+  cursor: pointer;
+}
+.form .rememberForgot .forgot:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=form.module.css.map */
