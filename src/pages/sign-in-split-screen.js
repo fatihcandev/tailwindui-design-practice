@@ -16,6 +16,7 @@ import Input from '../components/sign-in-page/input'
 import ImageSection from '../components/sign-in-page/image-section'
 import SEO from '../components/seo'
 import Checkbox from '../components/sign-in-page/checkbox'
+import SignInButton from '../components/sign-in-page/sign-in-button'
 
 const SignIn = ({ data }) => {
   const [rememberChecked, setRememberChecked] = useState(false)
@@ -24,7 +25,7 @@ const SignIn = ({ data }) => {
     <Layout>
       <SEO title="Sign In Page Split Screen" />
       <Form>
-        <Logo />
+        <Logo className={styles.logo} />
         <TextTitle className={styles.title}>Sign in to your account</TextTitle>
         <div className={styles.trial}>
           <TextBody>Or</TextBody>
@@ -57,6 +58,7 @@ const SignIn = ({ data }) => {
           />
           <TextBody className={styles.forgot}>Forgot your password?</TextBody>
         </div>
+        <SignInButton>Sign in</SignInButton>
       </Form>
       <ImageSection>
         <Image img={data.file.childImageSharp.fluid} alt="an architecture" />
