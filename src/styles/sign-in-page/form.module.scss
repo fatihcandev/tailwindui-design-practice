@@ -1,20 +1,18 @@
 @import '../variables';
 
 .form {
-  padding: 10px;
+  padding: 0 10px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   @media ($md) {
-    padding: 50px;
+    margin: 0 auto;
   }
 
-  @media ($lg) {
-    padding: 75px;
-  }
-
-  @media ($xl) {
-    padding: 105px;
+  .logo {
+    width: 50px;
+    height: 50px;
   }
 
   .title {
@@ -22,6 +20,10 @@
     font-weight: 800;
     font-size: 25px;
     margin-top: 15px;
+
+    @media ($xl) {
+      font-size: 31px;
+    }
   }
 
   .trial {
