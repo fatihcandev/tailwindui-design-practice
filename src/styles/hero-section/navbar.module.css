@@ -10,6 +10,10 @@
     grid-template-columns: auto 1fr;
     grid-column-gap: 50px;
   }
+  .navbar svg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /*# sourceMappingURL=navbar.module.css.map */
