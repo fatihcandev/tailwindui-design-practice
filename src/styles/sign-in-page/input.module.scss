@@ -1,3 +1,5 @@
+@import '../variables';
+
 .input {
   padding: 10px;
   border-radius: 5px;
@@ -5,5 +7,40 @@
 
   &:focus {
     outline: none;
+  }
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+
+  .checkbox {
+    border: 1px solid rgb(210, 214, 219);
+    width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    margin-right: 5px;
+
+    svg {
+      display: none;
+    }
+  }
+
+  .checkboxChecked {
+    border-radius: 3px;
+    margin-right: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    background-color: $blue;
+
+    svg {
+      display: block;
+      width: 17px;
+      height: 17px;
+      color: #fff;
+    }
   }
 }
