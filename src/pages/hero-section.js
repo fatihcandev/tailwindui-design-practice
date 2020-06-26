@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
-import { graphql } from 'gatsby'
 import Layout from '../components/hero-section/layout'
 import CallToAction from '../components/hero-section/call-to-action'
 import ImageSection from '../components/hero-section/image-section'
-import Image from '../components/image'
 import Navbar from '../components/hero-section/navbar'
 import SkewedShape from '../components/hero-section/skewed-container'
 import MobileNav from '../components/hero-section/mobile-navbar'
@@ -12,8 +10,9 @@ import styles from '../styles/hero-section/call-to-action.module.css'
 import TextTitle from '../components/text-title'
 import ThemeButton from '../components/hero-section/theme-button'
 import SEO from '../components/seo'
+import HeroSectionImage from '../components/hero-section/hero-section-image'
 
-const HeroSection = ({ data }) => {
+const HeroSection = () => {
   const [navOpen, setNavOpen] = useState(false)
 
   return (
@@ -44,25 +43,10 @@ const HeroSection = ({ data }) => {
         </div>
       </CallToAction>
       <ImageSection>
-        <Image
-          img={data.file.childImageSharp.fluid}
-          alt="people working on their computers"
-        />
+        <HeroSectionImage />
       </ImageSection>
     </Layout>
   )
 }
 
 export default HeroSection
-
-export const pageQuery = graphql`
-  query {
-    file(relativePath: { eq: "hero-section-image.jpg" }) {
-      childImageSharp {
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
