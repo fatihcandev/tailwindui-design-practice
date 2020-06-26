@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import Layout from '../components/sign-in-page/layout'
 import Form from '../components/sign-in-page/form'
-import { graphql } from 'gatsby'
-import Image from '../components/image'
+import SplitScreenImage from '../components/sign-in-page/split-screen-image'
 import Logo from '../components/hero-section/icons/logo'
 import TextTitle from '../components/text-title'
 import styles from '../styles/sign-in-page/form.module.css'
@@ -18,7 +17,7 @@ import SEO from '../components/seo'
 import Checkbox from '../components/sign-in-page/checkbox'
 import SignInButton from '../components/sign-in-page/sign-in-button'
 
-const SignIn = ({ data }) => {
+const SignIn = () => {
   const [rememberChecked, setRememberChecked] = useState(false)
 
   return (
@@ -61,22 +60,10 @@ const SignIn = ({ data }) => {
         <SignInButton>Sign in</SignInButton>
       </Form>
       <ImageSection>
-        <Image img={data.file.childImageSharp.fluid} alt="an architecture" />
+        <SplitScreenImage />
       </ImageSection>
     </Layout>
   )
 }
 
 export default SignIn
-
-export const pageQuery = graphql`
-  query {
-    file(relativePath: { eq: "sign-in-page-image.jpg" }) {
-      childImageSharp {
-        fluid(quality: 100) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
