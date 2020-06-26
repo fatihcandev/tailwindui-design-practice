@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox renders correctly 1`] = `
+<div
+  className="checkboxWrapper"
+>
+  <button
+    className="checkbox"
+  >
+    <svg
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M5 13l4 4L19 7"
+      />
+    </svg>
+  </button>
+  <p />
+</div>
+`;

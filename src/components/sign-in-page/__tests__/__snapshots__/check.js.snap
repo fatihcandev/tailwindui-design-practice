@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check renders correctly 1`] = `
+<svg
+  fill="none"
+  stroke="currentColor"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  strokeWidth="2"
+  viewBox="0 0 24 24"
+>
+  <path
+    d="M5 13l4 4L19 7"
+  />
+</svg>
+`;
