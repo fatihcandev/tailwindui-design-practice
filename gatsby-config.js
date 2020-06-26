@@ -4,7 +4,7 @@ module.exports = {
     description:
       'This is a portfolio website that contains components from Tailwind UI that has been created in order to practice my front-end skills.',
     url: 'https://tailwindui-design-practice.vercel.app/',
-    image: `${__dirname}/src/images/meta-image.jpg`,
+    image: './src/images/meta-image.jpg',
     twitterUsername: '@fatihcandev'
   },
   plugins: [
