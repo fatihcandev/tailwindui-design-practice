@@ -1,0 +1,37 @@
+/* media queries */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  border: 0;
+}
+
+button {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+body {
+  font-size: 1em;
+}
+
+.layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+/*# sourceMappingURL=layout.module.css.map */
