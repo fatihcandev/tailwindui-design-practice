@@ -10,7 +10,7 @@
 }
 .desktopNav p:hover {
   cursor: pointer;
-  color: #5663e5;
+  color: #5850eb;
 }
 @media (min-width: 1024px) {
   .desktopNav {

@@ -31,7 +31,7 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
-  background-color: #5663e5;
+  background-color: #5850eb;
   cursor: pointer;
 }
 .checkboxWrapper .checkboxChecked svg {

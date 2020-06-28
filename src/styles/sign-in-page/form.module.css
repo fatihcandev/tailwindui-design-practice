@@ -15,7 +15,7 @@
   height: 50px;
 }
 .form .title {
-  color: #16142e;
+  color: #161d2e;
   font-weight: 800;
   font-size: 25px;
   margin-top: 15px;
@@ -31,7 +31,7 @@
   color: gray;
 }
 .form .trial .blue {
-  color: #5663e5;
+  color: #5850eb;
   margin-left: 5px;
   font-weight: 500;
 }
@@ -54,7 +54,7 @@
   margin-top: 20px;
 }
 .form .rememberForgot .forgot {
-  color: #5663e5;
+  color: #5850eb;
   font-weight: 500;
   cursor: pointer;
 }

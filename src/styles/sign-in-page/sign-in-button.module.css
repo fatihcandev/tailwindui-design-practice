@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #5663e5;
+  background-color: #5850eb;
   color: #fff;
   margin-top: 20px;
   border-radius: 5px;
@@ -12,7 +12,7 @@
   cursor: pointer;
 }
 .signInButton:hover {
-  background-color: #6c77e8;
+  background-color: #6e67ee;
 }
 
 /*# sourceMappingURL=sign-in-button.module.css.map */

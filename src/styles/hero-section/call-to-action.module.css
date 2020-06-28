@@ -40,7 +40,7 @@
   font-size: 35px;
 }
 .textArea h1:nth-child(2) {
-  color: #5663e5;
+  color: #5850eb;
 }
 @media (min-width: 768px) {
   .textArea h1 {
@@ -99,13 +99,13 @@
   }
 }
 .buttons .dark {
-  background-color: #5663e5;
+  background-color: #5850eb;
   margin-bottom: 10px;
   font-weight: 500;
   color: #fff;
 }
 .buttons .dark:hover {
-  background-color: #828cec;
+  background-color: #847ef0;
 }
 @media (min-width: 768px) {
   .buttons .dark {
@@ -115,7 +115,7 @@
 }
 .buttons .light {
   background-color: #e7edfd;
-  color: #5663e5;
+  color: #5850eb;
 }
 .buttons .light:hover {
   background-color: #f0f4fe;
