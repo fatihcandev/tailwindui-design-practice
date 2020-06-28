@@ -37,6 +37,12 @@ export default function Index() {
           >
             Split screen sign in page
           </Navigator>
+          <Navigator
+            to="/hero-section-2"
+            title="Hero section with sign up and media content"
+          >
+            Hero Section with sign up and media content
+          </Navigator>
         </div>
       </div>
     </div>
